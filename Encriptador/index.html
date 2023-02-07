@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap'); </style>
+    <title>Encriptador de Texto.</title>
+</head>
+<body>
+    <header>
+        <div class="Titulo">
+            <image class="logo" src="imagenes/Logo.svg" alt="Logo de Alura">
+            <h1>CÓDIGO SECRETO</h1>   
+        </div>
+    </header>
+    <main id="encriptador">
+            <section class="area-texto">
+            <div class="textarea">
+                <textarea id="textarea" placeholder="Ingresa tu texto aquí"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="imagenes/atencion.svg">
+            </div>
+            <div class="botones">
+                <input type="button" class="buttons" id="encrypt__btn" value="Encriptar" onclick="botonEncriptar()">
+                <input type="button" class="buttons" id="decrypt__btn"value="Desencriptar" onclick="botonDesencriptar()">
+            </div>
+        </section>
+        <section class="segundo-panel">
+            <div class="resultado">
+                <textarea id="mostrar-texto" readonly></textarea>
+                <img id="img-mensaje" src="imagenes/ningun-mensaje.svg">
+                <button id="boton-copiar"  onclick="botonCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+     
+     <footer>
+        <div class="redes">
+            <p class="Copyright">&copy Copyright Encriptador Ing. Carlos A. García Paredes - 2022</p>
+              <ul>
+                <li style="--clr:rgb(80, 1, 64);">
+                  <a href="https://github.com/SkybrooksGarcia">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                  
+                <li style="--clr:#4267b2;">
+                    <a href="https://www.facebook.com/people/Carlos-Garcia/1683197650/">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  
+                  <li style="--clr:rgb(0, 0, 0);">
+                    <a href="https://www.linkedin.com/in/carlos-alberto-garc%C3%ADa-paredes-baa6bb238/">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  
+                  <li style="--clr:#E1306C;">
+                    <a href="https://www.instagram.com/skybrooksoficial/">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+    </footer>
+
+    <div class="fondo">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
